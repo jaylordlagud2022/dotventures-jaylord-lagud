@@ -16,7 +16,11 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
-        Category::factory(5)->create();
-
+        Category::factory(1)->create([
+            'name' => 'test1',
+        ]);
+        Category::factory(1)->create([
+            'name' => 'test2',
+        ]);
     }
 }

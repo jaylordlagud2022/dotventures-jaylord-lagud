@@ -16,11 +16,10 @@ class AdminUsersTableSeeder extends Seeder
      */
     public function run()
     {
-        User::factory(5)->create([
+        User::factory(1)->create([
             'name' => 'Admin User',
-            'email' => 'admin@example.com',
+            'email' => 'admin@test1.com',
             'password' => bcrypt('admin'),
-            'is_admin' => true,
         ]);
     }
 }
